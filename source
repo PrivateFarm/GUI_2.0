@@ -1,0 +1,166 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Heading = Instance.new("TextLabel")
+local Admin = Instance.new("TextButton")
+local SmallSize = Instance.new("TextButton")
+local Drop = Instance.new("TextButton")
+local Afk = Instance.new("TextButton")
+local Loop = Instance.new("TextButton")
+local FastPunch = Instance.new("TextButton")
+local Admin2 = Instance.new("TextButton")
+local _1Punch = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.670244932, 0, 0.243567735, 0)
+Frame.Size = UDim2.new(0, 397, 0, 366)
+Frame.Active = true
+Frame.Draggable = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.00340268225, 0, 0.600713193, 0)
+ImageLabel.Size = UDim2.new(0, 123, 0, 146)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=9055982727"
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.Position = UDim2.new(0.0068042581, 0, 0.163934425, 0)
+ImageLabel_2.Size = UDim2.new(0, 124, 0, 149)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=9048487605"
+
+Heading.Name = "Heading"
+Heading.Parent = Frame
+Heading.BackgroundColor3 = Color3.fromRGB(107, 223, 255)
+Heading.Position = UDim2.new(-0.00200468674, 0, 0, 0)
+Heading.Size = UDim2.new(0, 263, 0, 50)
+Heading.Font = Enum.Font.Creepster
+Heading.Text = "Ducky GANG (2.0)"
+Heading.TextColor3 = Color3.fromRGB(0, 0, 0)
+Heading.TextSize = 41.000
+
+Admin.Name = "Admin"
+Admin.Parent = Frame
+Admin.BackgroundColor3 = Color3.fromRGB(50, 206, 76)
+Admin.Position = UDim2.new(0.676742196, 0, 0.621857941, 0)
+Admin.Size = UDim2.new(0, 120, 0, 50)
+Admin.Font = Enum.Font.Creepster
+Admin.Text = "Reviz Admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextSize = 23.000
+Admin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/pGhYnsxA", true))()
+end)
+
+SmallSize.Name = "Small Size"
+SmallSize.Parent = Frame
+SmallSize.BackgroundColor3 = Color3.fromRGB(50, 206, 76)
+SmallSize.Position = UDim2.new(0.343669236, 0, 0.621857941, 0)
+SmallSize.Size = UDim2.new(0, 120, 0, 50)
+SmallSize.Font = Enum.Font.Creepster
+SmallSize.Text = "Small Size"
+SmallSize.TextColor3 = Color3.fromRGB(0, 0, 0)
+SmallSize.TextSize = 27.000
+SmallSize.MouseButton1Click:Connect(function()
+	for i,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetChildren()) do
+		if v:IsA("NumberValue") then
+			v:Destroy()
+		end
+	end
+end)
+
+Drop.Name = "Drop"
+Drop.Parent = Frame
+Drop.BackgroundColor3 = Color3.fromRGB(50, 206, 76)
+Drop.Position = UDim2.new(0.343669266, 0, 0.831471682, 0)
+Drop.Size = UDim2.new(0, 120, 0, 50)
+Drop.Font = Enum.Font.Creepster
+Drop.Text = "Drop"
+Drop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Drop.TextSize = 29.000
+Drop.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/CjVD4RZN", true))()
+end)
+
+Afk.Name = "Afk"
+Afk.Parent = Frame
+Afk.BackgroundColor3 = Color3.fromRGB(50, 206, 76)
+Afk.Position = UDim2.new(0.674223363, 0, 0.831471682, 0)
+Afk.Size = UDim2.new(0, 120, 0, 50)
+Afk.Font = Enum.Font.Creepster
+Afk.Text = "Afk"
+Afk.TextColor3 = Color3.fromRGB(0, 0, 0)
+Afk.TextSize = 31.000
+Afk.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/SN4agUmB", true))()
+end)
+
+Loop.Name = "Loop"
+Loop.Parent = Frame
+Loop.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Loop.Position = UDim2.new(0.343669266, 0, 0.196610153, 0)
+Loop.Size = UDim2.new(0, 120, 0, 50)
+Loop.Font = Enum.Font.Creepster
+Loop.Text = "Loop"
+Loop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Loop.TextSize = 31.000
+Loop.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://kalescriptz.000webhostapp.com/No%20glove"))() 
+end)
+
+FastPunch.Name = "FastPunch"
+FastPunch.Parent = Frame
+FastPunch.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+FastPunch.Position = UDim2.new(0.677002609, 0, 0.196610168, 0)
+FastPunch.Size = UDim2.new(0, 125, 0, 50)
+FastPunch.Font = Enum.Font.Creepster
+FastPunch.Text = "Punch Faster"
+FastPunch.TextColor3 = Color3.fromRGB(0, 0, 0)
+FastPunch.TextSize = 21.000
+FastPunch.MouseButton1Click:Connect(function()
+	old = hookfunction(wait,function(t)
+		if not checkcaller() and getcallingscript().Name == "MouseIcon" then
+			return old()
+		end
+		return old(t)
+	end)
+end)
+
+Admin2.Name = "Admin 2"
+Admin2.Parent = Frame
+Admin2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Admin2.Position = UDim2.new(0.343669266, 0, 0.386440665, 0)
+Admin2.Size = UDim2.new(0, 120, 0, 50)
+Admin2.Font = Enum.Font.Creepster
+Admin2.Text = "Inf Yeild"
+Admin2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin2.TextSize = 29.000
+Admin2.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+_1Punch.Name = "1 Punch"
+_1Punch.Parent = Frame
+_1Punch.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+_1Punch.Position = UDim2.new(0.677002609, 0, 0.386440665, 0)
+_1Punch.Size = UDim2.new(0, 123, 0, 50)
+_1Punch.Font = Enum.Font.Creepster
+_1Punch.Text = "1 Shot Kill"
+_1Punch.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1Punch.TextSize = 28.000
+_1Punch.TextWrapped = true
+_1Punch.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/PrivateFarm/1-Shot/main/source"))()
+end)
